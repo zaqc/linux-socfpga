@@ -372,7 +372,8 @@
 #define __NR_getrandom		352
 #define __NR_memfd_create	353
 #define __NR_seccomp		354
+#define __NR_bpf		355
 
-#define NR_syscalls		355
+#define NR_syscalls		356
 
 #endif  /* _UAPI_ASM_NIOS2_UNISTD_H */

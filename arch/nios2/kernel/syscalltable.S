@@ -376,7 +376,8 @@ ENTRY(sys_call_table)
 	.long sys_getrandom
 	.long sys_memfd_create
 	.long sys_seccomp		/* 355 */
+	.long sys_bpf
 
-	.rept NR_syscalls - 355
+	.rept NR_syscalls - 356
 		.long sys_ni_syscall
 	.endr
