@@ -178,5 +178,5 @@ obj-$(CONFIG_MFD_HI6421_PMIC)	+= hi6421-pmic-core.o
 intel-soc-pmic-objs		:= intel_soc_pmic_core.o intel_soc_pmic_crc.o
 obj-$(CONFIG_INTEL_SOC_PMIC)	+= intel-soc-pmic.o
 
-a10sycon-objs          := a10sycon-core.o a10sycon-spi.o
-obj-$(CONFIG_MFD_A10SYCON)     += a10sycon.o
+a10sycon-objs		:= a10sycon-core.o a10sycon-spi.o a10sycon-irq.o
+obj-$(CONFIG_MFD_A10SYCON)	+= a10sycon.o
