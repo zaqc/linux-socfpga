@@ -408,6 +408,8 @@
 			mac-address = [00 00 00 00 00 00];
 			snps,multicast-filter-bins = <256>;
 			snps,perfect-filter-entries = <128>;
+			tx-fifo-depth = <4096>;
+			rx-fifo-depth = <16384>;
 			clocks = <&l4_mp_clk>;
 			clock-names = "stmmaceth";
 			status = "disabled";
@@ -420,6 +422,11 @@
 			interrupt-names = "macirq";
 			/* Filled in by bootloader */
 			mac-address = [00 00 00 00 00 00];
+			snps,multicast-filter-bins = <256>;
+			snps,perfect-filter-entries = <128>;
+			max-frame-size = <3800>;
+			tx-fifo-depth = <4096>;
+			rx-fifo-depth = <16384>;
 			status = "disabled";
 		};
 
@@ -430,6 +437,11 @@
 			interrupt-names = "macirq";
 			/* Filled in by bootloader */
 			mac-address = [00 00 00 00 00 00];
+			snps,multicast-filter-bins = <256>;
+			snps,perfect-filter-entries = <128>;
+			max-frame-size = <3800>;
+			tx-fifo-depth = <4096>;
+			rx-fifo-depth = <16384>;
 			status = "disabled";
 		};
 
