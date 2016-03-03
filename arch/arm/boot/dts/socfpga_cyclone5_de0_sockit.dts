@@ -50,6 +50,13 @@
 			linux,default-trigger = "heartbeat";
 		};
 	};
+
+	soc {
+		mydrv@C000000 {
+			compatible = "mydrv";
+			interrupts = <0 41 1>;
+		};
+	};
 };
 
 &gmac1 {
